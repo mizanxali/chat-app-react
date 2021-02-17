@@ -7,7 +7,7 @@ import Messages from './Messages'
 import TextContainer from './TextContainer'
 
 let socket
-const ENDPOINT = 'localhost:5000'
+const ENDPOINT = 'https://chat-app-react-5270.herokuapp.com/'
 
 const Chat = (props) => {
 
