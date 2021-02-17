@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.joinOuterContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #1A1A1D;
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
   color: white;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .joinInnerContainer {
+    width: 90%;
   }
+}
+
+button:focus {
+  outline: 0;
 }
